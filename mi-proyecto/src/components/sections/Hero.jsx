@@ -1,23 +1,25 @@
-import SendHero from "./hero/SendHero"
+import FormConsult from "./hero/FormConsult"
 import Title from "./hero/Title"
-import InputText from "./hero/InputText"
 import HeroActions from "./hero/HeroActions"
-import { useState } from "react"
+import ModalResp from "./hero/ModalResp"
+import { useState } from "react";
 
 const Hero = () => {
+
     const [inputValue, setInputValue] = useState('');
 
-    const handleInputChange = (eventInput) => {
-        setInputValue(eventInput.target.value);
-    }
+   const handleSubmit = async (e,inputValue) => {
+        e.preventDefault();
+        setInputValue(inputValue);
+   }
 
     return(
         <section>
             <div className="flex flex-col items-center bg-green-500">
                 <Title />
-                <InputText value={inputValue} onChange={handleInputChange} />
+                <FormConsult handleSubmit={handleSubmit} />
+                <ModalResp  inputValue={inputValue} />
                 <HeroActions />
-                <SendHero  />
             </div>
         </section>
     )

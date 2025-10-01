@@ -5,6 +5,8 @@ import Prices from "../components/sections/Prices";
 import Testimonials from "../components/sections/Testimonials";
 
 
+
+
 const MainPage = () => {
   return (  
     <main>

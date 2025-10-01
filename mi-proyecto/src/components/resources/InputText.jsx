@@ -1,6 +1,6 @@
 
 const InputText = ({value, onChange}) => {
-    console.log(value);
+
     return(
         <input
             type="text"
@@ -8,6 +8,7 @@ const InputText = ({value, onChange}) => {
             placeholder="Ej: Redactar un contrato de arrendamiento comercial..."
             value={value}
             onChange={(e) => onChange(e)}
+            name="chat-input-IA"
         />
     )
 }

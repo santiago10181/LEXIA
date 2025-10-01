@@ -2,9 +2,23 @@ import axios from 'axios';
 import { API_URL, HEADERS, MODEL_MESSAGGES } from './Const_provider/api_header_Model.js';
 
 
-async function llamarZaiAPIConAxios() {
+async function llamarZaiAPIConAxios(requestMessage) {
     try {
-        const response = await axios.post(API_URL, MODEL_MESSAGGES, { headers: HEADERS });
+        const response = await axios.post(API_URL, {
+    model: 'glm-4.5-flash',
+    messages: [
+        {
+            role: 'system',
+            content: 'Eres un asistente legal especializado en derecho colombiano. Responde de manera profesional y estructurada.'
+        },
+        {
+            role: 'user',
+            content: requestMessage
+        }
+    ],
+    max_tokens: 4096,
+    temperature: 0.7
+}, { headers: HEADERS });
 
         return response.data.choices[0].message.content;
     } catch (error) {
@@ -13,15 +27,15 @@ async function llamarZaiAPIConAxios() {
     }
 }
 
-async function creaciónPet() {
-    try {
-        const respuesta = await llamarZaiAPIConAxios();
-        // 2. Abrir la modal con la respuesta final de la API
-        return respuesta;
-    } catch (error) {
-        // 3. Mostrar el error en la modal
-        console.log(error.message);
-    }
-}   
- creaciónPet()
- export default creaciónPet
+// async function creaciónPet() {
+//     try {
+//         const respuesta = await llamarZaiAPIConAxios();
+//         // 2. Abrir la modal con la respuesta final de la API
+//         return respuesta;
+//     } catch (error) {
+//         // 3. Mostrar el error en la modal
+//         console.log(error.message);
+//     }
+// }   
+//  creaciónPet()
+ export default llamarZaiAPIConAxios;

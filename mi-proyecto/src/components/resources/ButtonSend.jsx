@@ -1,6 +1,6 @@
 const ButtonSend = () => {
     return (
-            <button class="chat-send-btn" aria-label="Enviar consulta">
+            <button type="submit">
               <svg
                 width="20"
                 height="20"
