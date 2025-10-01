@@ -3,7 +3,8 @@ import ButtonActions from "../../resources/ButtonActions";
 const HeroActions = () => {
     return(
         <>
-        <ButtonActions />
+            <ButtonActions name={"ver planes"} href={"#"} />
+            <ButtonActions name={"Explorar funciones"} href={"#"} />
         </>
     )
 }

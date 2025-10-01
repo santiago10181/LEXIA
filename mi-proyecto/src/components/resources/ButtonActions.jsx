@@ -1,8 +1,7 @@
-const ButtonActions = () => {
+const ButtonActions = ({name,ref}) => {
     return (
         <>
-            <a href="#" >Ver Demo</a>
-            <a href="#">Empezar</a>
+            <button href={ref} >{name}</button>
         </>
     )
 }

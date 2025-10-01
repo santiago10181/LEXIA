@@ -1,6 +1,6 @@
 
 
-const CardsPrices = () => {
+const CardsPrices = ({description}) => {
 
     return (
       <li>
@@ -12,7 +12,7 @@ const CardsPrices = () => {
             viewBox="0 0 24 24"
           >
           <path stroke-linecap="round" d="M5 13l4 4L19 7"></path></svg>
-            Hasta 5 Usuarios
+            {description}
       </li>
     )
 }

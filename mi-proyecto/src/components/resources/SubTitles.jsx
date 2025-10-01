@@ -1,6 +1,6 @@
-const SubTitles = () => {
+const SubTitles = ({subtitle}) => {
     return(
-        <h2>Con la Confianza de Firmas Líderes y PYMEs</h2>
+        <h2>{subtitle}</h2>
     )
 }
 export default SubTitles;

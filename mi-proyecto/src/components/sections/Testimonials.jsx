@@ -5,8 +5,8 @@ import CardTestimonials from "./testimonials/CardTestimonials";
 const Testimonials = () => {
     return(
         <section>
-            <SubTitles />
-            <Paragraphs />
+            <SubTitles subtitle={"Testimonios"} />
+            <Paragraphs paragraph={`Lo que nuestros clientes dicen sobre nosotros.`} />
             <CardTestimonials />
         </section>
     )

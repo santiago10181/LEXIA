@@ -4,14 +4,16 @@ import HowDoes from "../components/sections/HowDoes";
 import Prices from "../components/sections/Prices";
 import Testimonials from "../components/sections/Testimonials";
 
+
 const MainPage = () => {
-  return (
+  return (  
     <main>
       <Hero />
       <Allies />
       <HowDoes />
       <Testimonials />
       <Prices />
+
     </main>
   );
 };

@@ -3,7 +3,8 @@ import ButtonActions from '../resources/ButtonActions';
 const ButtonsNav = () => {
     return (
         <div>
-            <ButtonActions />
+            <ButtonActions name = "Ver Demo" ref="#" />
+            <ButtonActions name = "Empezar" ref="#" />
         </div>
     )
 }

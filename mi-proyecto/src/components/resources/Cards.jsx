@@ -1,10 +1,8 @@
-const Cards = () => {
+const Cards = ({subname, subparagraph}) => {
     return(
         <article>
-            <h3><strong>Ana Torres</strong> – Socia en Torres & Asociados</h3>
-            <p>"LegalIA ha transformado la forma en que manejamos nuestros casos. La
-            capacidad de analizar grandes volúmenes de documentos en minutos nos ha
-            permitido centrarnos en lo que realmente importa: nuestros clientes."</p>
+            <h3>{subname}</h3>
+            <p>{subparagraph}</p>
         </article>
     )
 }

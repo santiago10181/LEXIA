@@ -5,8 +5,8 @@ import CardsWorks from "./how_dows/CardsWorks";
 const HowDoes = () => {
     return(
         <section className="bg-green-500"> 
-            <SubTitles />
-            <Paragraphs />
+            <SubTitles subtitle={"¿Cómo Funciona?"} />
+            <Paragraphs paragraph={`Transforme su práctica legal en tres simples pasos.`} />
             <CardsWorks />
         </section>
     )
