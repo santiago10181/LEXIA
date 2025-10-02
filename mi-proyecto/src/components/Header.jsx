@@ -1,17 +1,24 @@
 import Logo from './header/Logo.jsx';
-import NavMenu from './header/NavLinks';
+import NavLinks from './header/NavLinks';
 import ButtonActions from './header/ButtonsNav';
+import { Navbar, Button, NavbarCollapse, NavbarToggle } from "flowbite-react";
+
 
 const Header = () =>  {
-    return (
-        <header className="header" id="header">
-        <div className="flex flex-row justify-between items-center container nav">
-            <Logo />
-            <NavMenu />
+return (
+
+         <Navbar fluid rounded className='bg-[#94B4C1]' >
+        <Logo  Name="LEXIA"  />
+        <NavbarToggle   />
+        <NavbarCollapse>    
+            <NavLinks />
+        </NavbarCollapse>
+        <NavbarCollapse>   
             <ButtonActions />
-        </div>
-        </header>
+               </NavbarCollapse>   
+    </Navbar>   
     )
 }
 
 export default Header;
+

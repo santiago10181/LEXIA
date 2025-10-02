@@ -1,7 +1,10 @@
-const ButtonActions = ({name,ref}) => {
+import { Button } from "flowbite-react";    
+
+const ButtonActions = ({name,ref,styles}) => {
+
     return (
         <>
-            <button href={ref} >{name}</button>
+            <Button href={ref} className={styles} outline pill>{name}</Button>
         </>
     )
 }
