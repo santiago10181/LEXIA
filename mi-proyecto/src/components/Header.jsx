@@ -7,7 +7,7 @@ import { Navbar, Button, NavbarCollapse, NavbarToggle } from "flowbite-react";
 const Header = () =>  {
 return (
 
-         <Navbar fluid rounded className='bg-[#94B4C1]' >
+    <Navbar fluid rounded className='bg-[#0E5F76] fixed z-1 w-full border-b-1 border-[#0C5171]' >
         <Logo  Name="LEXIA"  />
         <NavbarToggle   />
         <NavbarCollapse>    
@@ -15,7 +15,7 @@ return (
         </NavbarCollapse>
         <NavbarCollapse>   
             <ButtonActions />
-               </NavbarCollapse>   
+        </NavbarCollapse>   
     </Navbar>   
     )
 }

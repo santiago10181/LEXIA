@@ -15,7 +15,8 @@ const ModalResp = ({inputValue}) => {
             setLoading(true);
             try {
                 const respuesta = await requestZapi(inputValue);
-                setResponse(respuesta);
+                // setResponse(respuesta);
+                console.log(respuesta);                
                 setLoading(false);
                 return 
             } catch (error) {

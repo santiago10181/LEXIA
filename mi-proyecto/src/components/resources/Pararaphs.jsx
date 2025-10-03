@@ -1,7 +1,7 @@
-const Paragraphs = ({paragraph}) => {  
+const Paragraphs = ({paragraph, color, font}) => {  
     return(
         <>
-            <p>
+            <p className={`${color} ${font} `}>
                 {paragraph}
             </p>
         </>

@@ -4,7 +4,7 @@ const ButtonActions = ({name,ref,styles}) => {
 
     return (
         <>
-            <Button href={ref} className={styles} outline pill>{name}</Button>
+            <Button href={ref} className={styles} outline >{name}</Button>
         </>
     )
 }

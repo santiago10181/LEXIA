@@ -9,7 +9,7 @@ import Testimonials from "../components/sections/Testimonials";
 
 const MainPage = () => {
   return (  
-    <main>
+    <main className="bg-[#0E5F76]">
       <Hero />
       <Allies />
       <HowDoes />
