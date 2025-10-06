@@ -15,7 +15,7 @@ const Hero = () => {
 
     return(
         <section>
-            <div className="flex flex-col items-center bg-[#0E5F76] py-[150px] px-4 text-white">
+            <div className="flex flex-col items-center bg-midblue py-[68px] px-4 text-white">
                 <Title />
                 <FormConsult handleSubmit={handleSubmit} />
                 {/* <ModalResp  inputValue={inputValue} /> */}

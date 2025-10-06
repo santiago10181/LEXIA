@@ -2,7 +2,7 @@ import ButtonActions from "../../resources/ButtonActions";
 
 const HeroActions = () => {
     return(
-        <div className="flex gap-4  my-[50px]">
+        <div className="flex gap-4  my-[40px]">
             <ButtonActions name={"ver planes"} href={"#"}
                         styles={`text-lg bg-[#081E3F] 
                             text-white focus:ring-0 focus:outline-none active:scale-95

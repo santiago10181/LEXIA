@@ -11,7 +11,7 @@ const MainPage = () => {
   return (  
     <main className="bg-[#0E5F76]">
       <Hero />
-      <Allies />
+      {/* <Allies /> */}
       <HowDoes />
       <Testimonials />
       <Prices />

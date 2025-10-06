@@ -1,9 +1,9 @@
 
 
-const CardsPrices = ({description}) => {
+const CardsPrices = ({description,style}) => {
 
     return (
-      <li>
+      <li className={style}>
           <svg
             width="20"
             height="20"
