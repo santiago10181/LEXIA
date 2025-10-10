@@ -1,8 +1,0 @@
-@import "tailwindcss";
-@import "flowbite/dist/flowbite.css";
-@theme {
-  --color-navy: #201E43;
-  --color-midblue: #134B70;
-  --color-teal: #508C9B;
-  --color-lightgray: #EEEEEE;
-}
